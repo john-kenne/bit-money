@@ -1,12 +1,4 @@
-//! A demo of a very bare-bones Bitcoin "wallet".
-//!
-//! The wallet here showcases how Bitcoin addresses can be computed
-//! and how Bitcoin transactions can be signed. It is missing several
-//! pieces that any production-grade wallet would have, including:
-//!
-//! * Support for address types that aren't P2PKH.
-//! * Caching spent UTXOs so that they are not reused in future transactions.
-//! * Option to set the fee.
+
 
 import Debug "mo:base/Debug";
 import Array "mo:base/Array";
