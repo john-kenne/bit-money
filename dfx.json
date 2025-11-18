@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "bit-money-backend": {
+      "main": "src/bit-money-backend/main.mo",
+      "type": "motoko"
+    },
+    "bit-money-frontend": {
+      "dependencies": [
+        "bit-money-backend"
+      ],
+      "source": [
+        "src/bit-money-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "bit-money-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
